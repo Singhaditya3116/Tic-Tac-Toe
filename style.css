@@ -3,7 +3,6 @@ body{
     background-color: whitesmoke;
 }
 
-
 #game{
     margin-top: 60px;
     background-color: #f7f7f7;
@@ -12,13 +11,20 @@ body{
     
 }
 
+#t21,#t22,#t23{
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+}
+#t12,#t22,#t32{
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+}
+
 td{
-    
     height:140px;
     width: 140px;
-    border: 5px solid black;
     text-align: center;
+    box-sizing: border-box;
     font-size: 50px;
     font-weight: bold;
-    border-radius: 10px;
 }

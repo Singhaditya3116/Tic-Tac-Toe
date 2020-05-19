@@ -35,8 +35,10 @@ function nextTurn() //changing the  turn of the player
     playerSpan.innerText=game.turn;
     if(game.move == 9)
     {
-        alert("Game over | Draw");
-        restartGame();
+        setTimeout(function(){
+            alert("Game over | Draw");
+            restartGame();
+        },300);
     }
 }
 
@@ -46,8 +48,11 @@ function isSequenceSame(arrayofThreeCells)
     let winningCombo = game.turn+game.turn+game.turn;
     if(outcome == winningCombo)
     {
-        alert("Game Over | Winner is "+game.turn);
-        restartGame();
+        setTimeout(function(){
+            alert("Game Over | Winner is "+game.turn);
+            restartGame();
+        },300)
+        
     }
 }
 
