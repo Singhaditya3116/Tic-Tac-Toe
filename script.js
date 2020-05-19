@@ -48,7 +48,7 @@ function isSequenceSame(arrayofThreeCells)
     let winningCombo = game.turn+game.turn+game.turn;
     if(outcome == winningCombo)
     {
-        let play=game.turn;
+        const play=game.turn;
         setTimeout(function(){
             alert("Game Over | Winner is "+play);
             restartGame();
