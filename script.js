@@ -1,13 +1,9 @@
-//constants
-const STARTED=1;
-const ENDED=0;
 
 const playerSpan = document.getElementById("player");
 const gameTable = document.getElementById("game");
 
 const game = {
     turn:'X',
-    state:STARTED,
     move:0
 }
 
@@ -98,6 +94,10 @@ function checkDiagonal(row,col) //checking diagonal
 function boxclicked(row,col)
 {
     let clickBox =gameTable.children[0].children[row-1].children[col-1]; //It get which cell is clicked
+    if(clickBox.innerText != "")
+    {
+        return;
+    }
     clickBox.innerText=game.turn; //changing the text of that cell
 
     checkRow(row); //checking if by playing this move, he can win or not.

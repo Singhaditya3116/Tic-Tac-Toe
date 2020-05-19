@@ -1,11 +1,12 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
 }
 
 
 #game{
     margin-top: 60px;
-    background-color: lemonchiffon;
+    background-color: #f7f7f7;
     height: 400px;
     width:400px;
     
